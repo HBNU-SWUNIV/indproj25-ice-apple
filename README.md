@@ -31,7 +31,7 @@
  •	영상 재생형 홍보 키오스크 : 인터랙션 부족, 데이터 저장 및 분석 불가능
   
 ## System Design
-     본 시스템은 MSA(Microservice Architecture) 기반으로 설계되었으며, 공지사항, 회의실 예약, 프로젝트 전시, 홍보영상, 인증 서비스 등 기능들을 각각 독립적인 마이크로서비스로 구현하였다. 각 서비스는 개별적으로 개발 및 배포가 가능하며, API Gateway를 통해 통합적으로 관리된다. 백엔드는 Spring Boot를 기반으로 하고, 프론트엔드는 React로 개발했으며, 데이터 저장은 PostgreSQL을 사용하였다. 또한 Docker와 GitHub Actions를 활용하여 서비스별 CI/CD 자동 배포 환경을 구축하였고, Raspberry Pi 환경에서 실제 키오스크 형태로 운용할 수 있도록 설계하였다.
+본 시스템은 MSA(Microservice Architecture) 기반으로 설계되었으며, 공지사항, 회의실 예약, 프로젝트 전시, 홍보영상, 인증 서비스 등 기능들을 각각 독립적인 마이크로서비스로 구현하였다. 각 서비스는 개별적으로 개발 및 배포가 가능하며, API Gateway를 통해 통합적으로 관리된다. 백엔드는 Spring Boot를 기반으로 하고, 프론트엔드는 React로 개발했으며, 데이터 저장은 PostgreSQL을 사용하였다. 또한 Docker와 GitHub Actions를 활용하여 서비스별 CI/CD 자동 배포 환경을 구축하였고, Raspberry Pi 환경에서 실제 키오스크 형태로 운용할 수 있도록 설계하였다.
     
   - ### System Requirements
      본 시스템이 만족해야 할 요구사항은 다음과 같다.
